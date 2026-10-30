@@ -124,6 +124,10 @@ export default function PokemonDetailScreen() {
     navigation.navigate('PokemonCamera', { id });
   }
 
+  useEffect(() => {
+    console.log('Abrindo pokémon', id);
+    const controller = new AbortController();
+  })
 
   useEffect(() => {
     const controller = new AbortController();

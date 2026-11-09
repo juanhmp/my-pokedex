@@ -4,8 +4,10 @@ import LoginScreen from '../pages/Login';
 import PokemonListScreen from '../pages/PokemonList';
 import PokemonDetailScreen from '../pages/PokemonDetail';
 import PokemonCameraScreen from '../pages/PokemonCamera';
+import AboutScreen from '../pages/About';
 
 export type RootStackParamList = {
+    About: undefined;
     Login: undefined;
     PokemonList: undefined;
     PokemonDetail: {id: number};
@@ -23,6 +25,7 @@ export default function AppNavigator() {
             <Stack.Screen name="PokemonList" component={PokemonListScreen}/>
             <Stack.Screen name="PokemonDetail" component={PokemonDetailScreen}/>
             <Stack.Screen name="PokemonCamera" component={PokemonCameraScreen}/>
+            <Stack.Screen name="About" component={AboutScreen} options={{ headerShown: true, title: 'Sobre' }}/>
         </Stack.Navigator>
     )
 }

@@ -73,6 +73,9 @@ export default function LoginScreen() {
           style={styles.textInput}
         />
       </View>
+      <Text>
+        Você digitou: {email} ({email.length} letras)
+      </Text>
       <Text style={styles.titleInput}>Senha</Text>      
       <View style={styles.boxInput}>
       <TextInput
